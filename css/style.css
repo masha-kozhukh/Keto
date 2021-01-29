@@ -7,11 +7,9 @@ body{
     
 
 }
-html{
-    box-sizing: border-box;
-}
+
 *,*::after, *::before{
-    box-sizing: inherit;
+    box-sizing: border-box;
 
 }
 h1,h2,h3,h4,h5,h6, p{
@@ -844,7 +842,7 @@ textarea.form__input:focus{
     width: 100%;
     margin-top: 100px;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 .footer__cards{
    
@@ -1170,7 +1168,7 @@ textarea.form__input:focus{
         padding: 0px 5px 20px 5px;
     }
     .ant-carousel {
-        max-width: 500px;
+        max-width: 450px;
     }
    
     .prov__img {
@@ -1206,6 +1204,12 @@ textarea.form__input:focus{
 
 
 }
+@media screen and (max-width:530px){
+    .ant-carousel{
+        max-width: 380px;
+    }
+}
+
 @media screen and (max-width:450px){
     .services__item {
         max-width: 100%;
@@ -1225,5 +1229,11 @@ textarea.form__input:focus{
     }
     .form__wrapper {
         margin: 0px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .ant-carousel{
+        max-width: 300px;
     }
 }
