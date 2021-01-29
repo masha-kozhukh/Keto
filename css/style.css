@@ -692,8 +692,7 @@ textarea.form__input:focus{
 }
 .ant-carousel-element img{
     max-width: 100%;
-    width: 200px;
-    height:200px;
+    
     display: inline-block;
     border-radius: 100%;
 
@@ -750,14 +749,14 @@ textarea.form__input:focus{
   }
   
   div.ant-carousel-arrow-left {
-    left: -40px;
+    left: -20px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
   }
   
   div.ant-carousel-arrow-right {
-    right: -40px;
+    right: -20px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
@@ -1215,8 +1214,11 @@ textarea.form__input:focus{
         max-width: 100%;
     }
     .reviews__title::after {
-        right: 45%;
-        top: 85%;
+        display: none;
+    }
+    .reviews__title {
+        padding: 5px 0px 5px 0px;
+        font-size: 22px;
     }
     .contact {
         margin-top: 50px;
@@ -1230,6 +1232,10 @@ textarea.form__input:focus{
     .form__wrapper {
         margin: 0px;
     }
+    .reviews__title {
+    padding: 5px 0px 5px 0px;
+    font-size: 22px;
+}
 }
 
 @media screen and (max-width:400px){
