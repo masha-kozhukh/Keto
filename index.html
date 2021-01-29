@@ -60,6 +60,9 @@
                             <a href="#our-services" class="header__link js-scroll">Our services</a>
                          </li>
                          <li>
+                            <a href="#articles" class="header__link js-scroll">Articles</a>
+                         </li>
+                         <li>
                             <a href="#testimonial" class="header__link js-scroll">Testimonials</a>
                          </li>
                          <li>
@@ -184,28 +187,9 @@
             </div>
        </div>
    </section>
-   <section class="reviews">
-       <div class="reviews__card">
-           <h3 class="reviews__title">What our customer are saying</h3>
-           <div class="reviews__content">
-               <div class="reviews__right">
-                   <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
-                   <div class="reviews__bio">
-                        <h4 class="name">Edward Newgate</h4>
-                        <p class="profession">Founder Circle</p>
-                   </div>
-                   
-               </div>
-               <div class="reviews__left">
-                   <p class="reviews__text">“Our dedicated patient engagement app and 
-                    web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                    or administrative hassle) and securely”</p>
-               </div>
-           </div>
-       </div>
-   </section>
+  
    <!--article-->
-   <section class="article">
+   <section class="article" id='articles'>
        <h2 class="main__title article__title">Check out our latest article</h2>
        <div class="article__cards">
            <div class="article__card">
@@ -237,81 +221,214 @@
    </section>
    <!--contact-->
    <section class="contact" id="contacts-us">
-    <div class="cintainer">
-        <div class="services__main-text">
-            <h2 class="services__title">Contact us </h2>
-            <p class="services__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt modi officiis laborum est, iusto iste culpa voluptate officia blanditiis ex voluptatum sequi repudiandae dolore harum neque id ducimus mollitia.</p>
-        </div>    
-        <div class="form__wrapper">
-            <form action="#" id='form' class="contact__form">
-                <h3 class="form__title">Send message</h3>
-                <div class="form__item">
-                    <label for="formNmae" class="form__label">Name*:</label>
-                    <input id='formNmae' type="text" class="form__input _req" name='name'>
-                </div>
-                <div class="form__item">
-                    <label for="formEmail" class="form__label">E-mail*:</label>
-                    <input id='formEmail' type="email" class="form__input _req  _email" name='E-mail'>
-                </div>
-                <div class="form__item">
-                    <label for="formTell" class="form__label">Your number*:</label>
-                    <input type="tel" name="tel" id="formTell" class="form__input  _req  _numb">
-                </div>
-                <div class="form__item">
-                    <label for="formMessage" class="form__label"> Message </label>
-                    <textarea id='formMessage'  class="form__input" name='message'> </textarea>
-                </div>
-                <button class='form__button' type="submit">submit</button>
-                
-            </form>
-        </div>
-            
-            
-        
-        </div>
-       
-       
-        </section>
-        <section class="testimonials" id='testimonial'>
-            <div class="cintainer">
-                <div class="services__main-text">
-                    <h2 class="services__title">Testimonials</h2>
-                    <p class="services__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque facere aliquid magni nobis consectetur beatae eligendi debitis, error alias molestiae voluptatibus placeat aspernatur animi. Incidunt voluptatum aliquam error magni id!</p>
-                </div>
-                <div class="ant-carousel">
-                    <div class="ant-carousel-hider">
-                    <ul class="ant-carousel-list">
-                        <li class="ant-carousel-element"><img src="img/g.jfif" alt="0">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src="img/girl_2.jfif" alt="1">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src="img/girl_3.jpg" alt="2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src='img/man_1.jfif' alt="3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src='img/man_2.jfif' alt="4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src='img/man_3.jfif' alt="5">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                        <li class="ant-carousel-element"><img src='img/girl_4.jfif' alt="6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur delectus </p>
-                        </li>
-                    
-                    
-                    </ul>
-                    </div>
-                    <div class="ant-carousel-arrow-left"></div>
-                    <div class="ant-carousel-arrow-right"></div>
-                    <div class="ant-carousel-dots"></div>
-                </div>
+        <div class="cintainer">
+            <div class="services__main-text">
+                <h2 class="main__title">Contact us </h2>
+                <p class="main__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt modi officiis laborum est, iusto iste culpa voluptate officia blanditiis ex voluptatum sequi repudiandae dolore harum neque id ducimus mollitia.</p>
             </div>    
-        </section>
+            <div class="form__wrapper">
+                <form action="#" id='form' class="contact__form">
+                    <h3 class="form__title">Send message</h3>
+                    <div class="form__item">
+                        <label for="formNmae" class="form__label">Name*:</label>
+                        <input id='formNmae' type="text" class="form__input _req" name='name'>
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">E-mail*:</label>
+                        <input id='formEmail' type="email" class="form__input _req  _email" name='E-mail'>
+                    </div>
+                    <div class="form__item">
+                        <label for="formTell" class="form__label">Your number*:</label>
+                        <input type="tel" name="tel" id="formTell" class="form__input  _req  _numb">
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label"> Message </label>
+                        <textarea id='formMessage'  class="form__input" name='message'> </textarea>
+                    </div>
+                    <button class='form__button' type="submit">submit</button>
+                    
+                </form>
+            </div>
+                
+                
+            
+        </div>
+       
+       
+    </section>
+    <section class="testimonials" id='testimonial'>
+        <div class="cintainer">
+            <div class="services__main-text">
+                <h2 class="main__title">Testimonials</h2>
+                <p class="main__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque facere aliquid magni nobis consectetur beatae eligendi debitis, error alias molestiae voluptatibus placeat aspernatur animi. Incidunt voluptatum aliquam error magni id!</p>
+            </div>
+            <div class="ant-carousel">
+                <div class="ant-carousel-hider">
+                <ul class="ant-carousel-list">
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/girl_3.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                    <li class="ant-carousel-element">
+                        <!-- <section class="reviews"> -->
+                            <div class="reviews__card">
+                                <h3 class="reviews__title">What our customer are saying</h3>
+                                <div class="reviews__content">
+                                    <div class="reviews__right">
+                                        <img class="reviews__img" src="img/reviews/customer.jpg" alt="Edward Newgate" >
+                                        <div class="reviews__bio">
+                                             <h4 class="name">Edward Newgate</h4>
+                                             <p class="profession">Founder Circle</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reviews__left">
+                                        <p class="reviews__text">“Our dedicated patient engagement app and 
+                                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                                         or administrative hassle) and securely”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </section> -->
+                    </li>
+                
+                
+                </ul>
+                </div>
+                <div class="ant-carousel-arrow-left"></div>
+                <div class="ant-carousel-arrow-right"></div>
+                <div class="ant-carousel-dots"></div>
+            </div>
+        </div>    
+    </section>
         <!--Timer-->
         <section class="timer">
             <div class="container">
@@ -341,14 +458,14 @@
    </main>
    <!--Footer-->
    <footet class="footer">
-       <div class="footer__content">
+        <div class="footer__content">
             <div class="container">
                 <div class="footer__cards">
                     <div class="footer__card footer__big-colum">
                         <a href="#contacts-us" class="footer__logo js-scroll">
-                   
+                    
                             Trafalgar
-                          </a>
+                        </a>
                         <p class="footer__text">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
                         for everyone</p>
                         <p class="footer__text">
@@ -384,10 +501,10 @@
                     </div>
     
                 </div>
+            </div>
         </div>
-       </div>
-     
-   </footet>
+  
+    </footet>
 
 
 

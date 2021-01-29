@@ -312,7 +312,13 @@ img{
    
     border-radius: 20px;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    
+    cursor: pointer;
+    transition: .2s all;
+}
+.services__item:hover{
+   transform: translateX(2px);
+   
+  
 }
 .services__img{ 
     margin-top: 30px;
@@ -410,7 +416,7 @@ img{
 }
 /*APP*/
 .app{
-    margin: 250px 0px;
+    margin: 100px 0px;
 }
 .app__content{
     display: flex;
@@ -518,7 +524,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 70px 0px;
+  
 
 }
 .article__card{
@@ -611,10 +617,7 @@ img{
     visibility: visible;
 }
 
-.form__title{
-    margin-bottom: 70px;
-    text-align: center;
-}
+
 
 .form__item{
     margin-bottom: 30px;
@@ -706,9 +709,10 @@ textarea.form__input:focus{
   }
   
   .ant-carousel-element {
-    width: 270px;
+    width: 100%;
     text-align: center;
     padding: 20px;
+   
   }
   
   /* General styles */
@@ -728,6 +732,7 @@ textarea.form__input:focus{
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+    
   }
   
   .ant-carousel-element {
@@ -833,8 +838,11 @@ textarea.form__input:focus{
   }
 
   /*footer*/
-.footer__content{
-    margin-top: 200px;
+
+.footer{
+    display: inline-block;
+    width: 100%;
+    margin-top: 100px;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
     padding: 100px 0px;
 }
@@ -1012,7 +1020,9 @@ textarea.form__input:focus{
     }
     .services__item{
         margin: 20px 0px;
+      
     }
+    
     .app {
         margin: 50px 0px;
     }
@@ -1055,6 +1065,7 @@ textarea.form__input:focus{
     .container{
         max-width: auto;
     }
+    
     .inner__title {
         font-size: 38px;
     }
@@ -1151,9 +1162,15 @@ textarea.form__input:focus{
     .close__line:last-child{
         transform:translateY(-50%) rotate(-45deg);
     }
-
+    .reviews__title{
+        padding: 15px 0px 50px 0px;
+    }
+    .reviews__content {
+        
+        padding: 0px 5px 20px 5px;
+    }
     .ant-carousel {
-        max-width: 270px;
+        max-width: 500px;
     }
    
     .prov__img {
@@ -1196,5 +1213,17 @@ textarea.form__input:focus{
     .reviews__title::after {
         right: 45%;
         top: 85%;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+    .services__title{
+        margin-bottom: 20px;
+    }
+    .ant-carousel{
+        max-width: 350px;
+    }
+    .form__wrapper {
+        margin: 0px;
     }
 }
