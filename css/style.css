@@ -48,6 +48,53 @@ img{
     
 }
 
+/*scroll*/
+.scroll-up{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    color: rgba(236, 247, 247, 0.65);
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 4px  rgba(225, 233, 233, 0.65);
+    opacity: 0;
+    transition: .2s all linear;
+    transform: translateY(25px);
+}
+.scroll-up::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    content: "↑";
+    color:  rgb(18, 148, 235);
+}
+.scroll-up:hover{
+    color: rgb(56, 140, 209);
+}
+.scroll-up--active{
+    opacity: 1;
+    visibility:visible;
+    transform: translateY(0);
+}
+.scroll-up__svg-path{
+    box-sizing: content-box;
+    fill: none;
+    stroke: rgb(18, 148, 235);
+    stroke-width: 4px;
+    transition: .2s all linear;
+}
+
+
 /* HEADER */
 .header{
     position: fixed;
